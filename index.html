@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Share Link</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <div class="title">
+                    <h3>Follow us!</h3>
+                </div>
+                <div class="icons">
+                    <div class="icon" onclick="toggleActive(this)" data-link = "https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon" onclick="toggleActive(this)" data-link = "https://facebook.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon active" onclick="toggleActive(this)" data-link = "https://atalink.com">
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>
+                    <div class="icon" onclick="toggleActive(this)" data-link = "https://behance.com">
+                        <i class="fa-brands fa-behance"></i>
+                    </div>
+                </div>
+                <div class="copyLink">
+                    <div class="sharePage">
+                        <p>Or share this page</p>
+                        <span class="alert">Copied!</span>
+                    </div>
+                    <div class="input" onclick="copyToClipboard()">
+                        <input id ="link" type="text" value="https://atalink.com" readonly>
+                        <p>Copy to clipboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
